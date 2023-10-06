@@ -27,4 +27,6 @@ Route::middleware([
     //     return view('dashboard');
     // })->name('dashboard');
     Route::get('/dashboard', [adminDashboardController::class, 'index'])->name('dashboard');
+    Route::get('/shorten', [adminDashboardController::class, 'shorten'])->name('shorten');
+    Route::get('/{shortUrl}', [adminDashboardController::class, 'redirectToOriginal'])->name('shortUrl');
 });

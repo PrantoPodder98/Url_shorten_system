@@ -20,4 +20,27 @@
       </div>
     </div>
   </div>
+<div class="card">
+    <div class="card-body bg-light">
+        <div class="row border-bottom">
+          <div class="col-sm-12 col-lg-12">
+            <div class="form-group row align-items-center mb-0">
+              <label
+                for="inputEmail3"
+                class="col-1 text-end control-label col-form-label"
+                >URL</label
+              >
+              <div class="col-11 border-start pt-2 pb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail3"
+                  placeholder="http://"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
 @endsection
