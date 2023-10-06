@@ -1,6 +1,6 @@
 @extends('backend.master')
 @section('content')
-    <div class="card w-100 bg-light-info overflow-hidden shadow-none">
+    {{--  <div class="card w-100 bg-light-info overflow-hidden shadow-none">
         <div class="card-body position-relative">
             <div class="row">
                 <div class="col-sm-7">
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  --}}
     <div class="card">
         <div class="card-body bg-light">
             <div class="row border-bottom">
@@ -47,8 +47,10 @@
             </div>
         </div>
     </div>
+    @if($urls->count() > 0)
     <div class="card">
         <div class="card-body bg-light">
+            <h2>History</h2>
             <div class="table-responsive">
                 <table id="zero_config"
                     class="table border table-striped table-bordered text-nowrap">
@@ -65,8 +67,13 @@
                     @foreach ($urls as $url)
                     <tr>
                         <td>{{ $i++ }}</td>
-                        <td><a href="{{ $url->original_url }}">{{ $url->original_url }}</a></td>
-                        <td><a href="{{ $url->short_url }}">{{ $url->short_url }}</a></td>
+                        <td style="white-space: normal; max-width: 200px;">
+                            <a href="{{ $url->original_url }}" target="_blank">{{ $url->original_url }}</a>
+                        </td>
+                        <td style="white-space: normal; max-width: 200px;">
+                            <a href="{{ $url->short_url }}" target="_blank">{{ $url->short_url }}</a>
+                        </td>
+
                         <td>{{ $url->click_count }}</td>
                     </tr>
                     @endforeach
@@ -75,4 +82,5 @@
             </div>
         </div>
     </div>
+    @endif
 @endsection

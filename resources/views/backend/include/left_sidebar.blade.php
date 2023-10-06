@@ -31,15 +31,6 @@
               <span class="hide-menu">Home</span>
             </a>
           </li>
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="index2.html" aria-expanded="false">
-              <span>
-                <i class="ti ti-globe"></i>
-              </span>
-              <span class="hide-menu">URL</span>
-            </a>
-          </li>
-
         </ul>
       </nav>
       <!-- End Sidebar navigation -->

@@ -15,7 +15,8 @@ use App\Http\Controllers\adminDashboardController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return redirect()->route('login');
 });
 
 Route::middleware([

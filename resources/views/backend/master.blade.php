@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <!--  Title -->
-    <title>Mordenize</title>
+    <title>Url Shortener System</title>
     <!--  Required Meta Tag -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="handheldfriendly" content="true" />
     <meta name="MobileOptimized" content="width" />
-    <meta name="description" content="Mordenize" />
+    <meta name="description" content="url" />
     <meta name="author" content="" />
-    <meta name="keywords" content="Mordenize" />
+    <meta name="keywords" content="url" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--  Favicon -->
     <link rel="shortcut icon" type="image/png" href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico" />
@@ -61,7 +61,7 @@
     <script src="{{ asset('asset/backend')}}/libs/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="{{ asset('asset/backend')}}/libs/apexcharts/dist/apexcharts.min.js"></script>
     <script src="{{ asset('asset/backend')}}/js/dashboard.js"></script>
+
   </body>
 
-<!-- Mirrored from demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/html/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Aug 2023 08:15:42 GMT -->
 </html>
