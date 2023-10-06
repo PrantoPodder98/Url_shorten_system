@@ -15,6 +15,19 @@ use App\Http\Controllers\API\UrlShortenerController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+// User registration
+Route::post('register', [ApiController::class, 'register']);
+
+// User login
+Route::post('login', [ApiController::class, 'login']);
+
+Route::middleware('auth:sanctum')->group(function () {
+    // Protected API routes go here
+    Route::post('shorten', [ApiController::class, 'shorten']);
+Route::get('r/{shortUrl}', [ApiController::class, 'redirectToOriginal']);
 });
+
